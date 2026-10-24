@@ -638,4 +638,4 @@ for k, v in {"features": FEATURES, "features_used": cols, "sample": SAMPLE, "spl
              "critical_margin": CRITICAL_MARGIN, "tweedie_power": TWEEDIE_POWER,
              "n_train": int(len(tr)), "n_test": int(len(te)), "mase_scale": round(float(scale_abs), 4)}.items():
     print(f"  {k:<16} {v}")
-log(f"finished in {(time.time() - T_START) / 60:.1f} minutes; nothing was written to disk")
+log(f"finished in {(time.time() - T_START) / 60:.1f} minutes")
