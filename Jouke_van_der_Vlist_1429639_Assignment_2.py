@@ -30,7 +30,6 @@ import time
 import warnings
 
 import holidays
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -69,7 +68,7 @@ except NameError:
 DATA_PATH = "household_power_consumption.txt"
 CHUNK_ROWS = 200_000          # rows read per chunk; lower this if reading runs out of memory
 
-FEATURES = "paper+lag1min"    # "paper" | "paper+lag1min" | "paper+electrical" | "gap-realistic"
+FEATURES = "paper"    
 SAMPLE = 100_000              # rows drawn at random from the usable minutes; 0 = all rows (paper; very slow)
 SPLIT = "random"              # "random" 80/20 as in the paper | "chronological" (last 20% as test)
 TEST_SIZE = 0.2
